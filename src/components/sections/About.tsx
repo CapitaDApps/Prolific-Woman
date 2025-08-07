@@ -42,7 +42,7 @@ export default function About() {
                   data-aos-duration="1500"
                   data-aos-anchor-placement="top-bottom"
                 fill
-                src={"/images/court_3.png"}
+                src={"/images/court_3.PNG"}
                 className="object-top object-contain "
               />
             </div>
