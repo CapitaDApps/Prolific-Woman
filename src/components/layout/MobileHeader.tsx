@@ -37,7 +37,7 @@ export default function MobileHeader() {
   const { activeSection } = useNav();
   return (
     <div className="lg:hidden bg-white flex items-center sofia-medium justify-between w-full  fixed py-2.5 z-50 px-2">
-      <div className="relative w-[110px] aspect-auto h-[40px] ">
+      <div className="relative w-[80px] aspect-auto h-[40px] ">
         <Image
           src="/images/logo.png"
           className="object-center object-contain"

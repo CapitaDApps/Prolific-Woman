@@ -103,9 +103,11 @@ export default function EvolveAccordion() {
                     {item.title}
                   </AccordionTrigger>
                   <AccordionContent>
-                    <SplitText className="text-xs md:text-sm sofia-light px-6  py-2">
+                    <p   data-aos="zoom-in"
+                  data-aos-easing="linear"
+                  data-aos-duration="700" className="text-xs md:text-sm sofia-light px-6  py-2">
                       {item.content}
-                    </SplitText>
+                    </p>
 
                     <div className="w-full lg:w-[90%] lg:hidden  relative  max-w-sm  h-[250px] ">
                       <AnimatePresence mode="wait">

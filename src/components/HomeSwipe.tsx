@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import SplitText from "./SplitText";
 
 const slides = [
   {
@@ -87,13 +86,15 @@ export default function HomeSwipe() {
               className="object-cover brightness-50 transition duration-500 ease-in-out"
             />
 
-            <div className="px-4 max-w-lg lg:max-w-full lg:px-12 absolute inset-0 z-20 flex flex-col justify-center   text-white">
-              <SplitText className="text-2xl md:text-5xl lg:text-[50px] font-bold sofia-medium  lg:leading-[70px] max-w-[48rem]">
+            <div   data-aos="fade-up"
+                  data-aos-easing="linear"
+                  data-aos-duration="1000" className="px-4 max-w-lg lg:max-w-full lg:px-12 absolute inset-0 z-20 flex flex-col justify-center   text-white">
+              <h2 className="text-2xl md:text-5xl lg:text-[50px] font-bold sofia-medium  lg:leading-[70px] max-w-[48rem]">
                 {slides[index].heading}
-              </SplitText>
-              <SplitText className="mt-4 tracking-wider text-sm md:text-base font-[100]  max-w-xl">
+              </h2>
+              <p className="mt-4 tracking-wider text-sm md:text-base font-[100]  max-w-xl">
                 {slides[index].subtext}
-              </SplitText>
+              </p>
               <p></p>
               <div className="mt-6 flex items-center w-full gap-2 md:gap-4 relative">
                 <div
@@ -143,7 +144,7 @@ export default function HomeSwipe() {
         </motion.div>
       </AnimatePresence>
       {index === 0 ? (
-        <div className="absolute bottom-[12%] right-[5%] flex items-center gap-3 -translate-y-1/2 z-20">
+        <div className="absolute bottom-[10%] right-[5%] flex items-center gap-3 -translate-y-1/2 z-20">
           <div className="">
             <button
               onClick={() => swipeTo(1)}
@@ -160,7 +161,7 @@ export default function HomeSwipe() {
           </div>
         </div>
       ) : index === 2 ? (
-        <div className="absolute bottom-[12%] right-[5%] flex items-center gap-3 -translate-y-1/2 z-20">
+        <div className="absolute bottom-[10%] right-[5%] flex items-center gap-3 -translate-y-1/2 z-20">
           <div className="">
             <button
               onClick={() => swipeTo(-1)}
@@ -177,7 +178,7 @@ export default function HomeSwipe() {
           </div>
         </div>
       ) : (
-        <div className="absolute bottom-[12%] right-[5%] flex items-center gap-3 -translate-y-1/2 z-20">
+        <div className="absolute bottom-[10%] right-[5%] flex items-center gap-3 -translate-y-1/2 z-20">
           <div className="">
             <button
               onClick={() => swipeTo(-1)}
