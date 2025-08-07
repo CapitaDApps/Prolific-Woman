@@ -7,10 +7,8 @@ import { Button } from "@/components/ui/button";
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
-  FormLabel,
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
@@ -18,11 +16,9 @@ import { Textarea } from "./ui/textarea";
 
 const formSchema = z.object({
   name: z.string().min(2, {
-    message: "Username must be at least 2 characters.",
+    message: "Name must be at least 2 characters.",
   }),
-  bio: z.string().min(2, {
-    message: "Username must be at least 2 characters.",
-  }),
+  email: z.string().email(),
   message: z.string().min(2, {
     message: "Message must be at least 2 characters.",
   }),
@@ -47,13 +43,13 @@ export function FooterForm() {
   return (
     <Form {...form}>
       <form
-         data-aos="zoom-in"
-      data-aos-easing="linear"
-      data-aos-duration="1500"
-      data-aos-anchor-placement="top-bottom"
+        data-aos="zoom-in"
+        data-aos-easing="linear"
+        data-aos-duration="500"
+        data-aos-anchor-placement="top-bottom"
         style={{
           background:
-            " linear-gradient(180deg, rgba(71, 71, 71, 0.5) 0%, rgba(153, 153, 153, 0.5) 100%)",
+            "linear-gradient(180deg, rgba(71, 71, 71, 0.5) 0%, rgba(153, 153, 153, 0.5) 100% )",
         }}
         onSubmit={form.handleSubmit(onSubmit)}
         className="space-y-3 border border-[#7A7A7A] rounded-3xl p-2 max-w-md z-30"
@@ -78,13 +74,14 @@ export function FooterForm() {
           />
           <FormField
             control={form.control}
-            name="bio"
+            name="email"
             render={({ field }) => (
               <FormItem className="w-full">
                 <FormControl>
                   <Input
+                  type="email"
                     className="bg-[#434343] sofia-light w-full py-2 text-[#CCCCCC] text-xs rounded-xl border border-[#7A7A7A]"
-                    placeholder="Name"
+                    placeholder="Email"
                     {...field}
                   />
                 </FormControl>
@@ -102,7 +99,7 @@ export function FooterForm() {
               <FormControl>
                 <Textarea
                   placeholder="Tell us a little bit about yourself"
-                  className="resize-none h-[180px] bg-[#434343] sofia-light py-2 text-[#CCCCCC] text-xs rounded-xl border border-[#7A7A7A]"
+                  className="resize-none h-[100px] bg-[#434343] sofia-light py-2 text-[#CCCCCC] text-xs rounded-xl border border-[#7A7A7A]"
                   {...field}
                 />
               </FormControl>

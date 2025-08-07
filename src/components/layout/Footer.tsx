@@ -37,7 +37,8 @@ export default function Footer() {
     },
   ];
   return (
-    <footer id="contact"
+    <footer
+      id="contact"
       style={{
         backgroundAttachment: "fixed",
       }}
@@ -47,83 +48,18 @@ export default function Footer() {
         Contact Us
       </h1>
 
-      <div className="flex gap-5 flex-col md:flex-row pb-6 md:pb-12 lg:pb-16 mt-8 lg:mt-16 items-center z-20">
-        <div className="w-full">
-          <div className="space-y-5  md:max-w-sm">
-            <div className="flex items-center gap-2 md:gap-3">
-              <h3 className="text-[#F2F2F2] font-bold text-xl md:text-2xl">
-                Sponsor the Vision
-              </h3>
-              <Image
-                src="/icons/arrow-side.png"
-                width={15}
-                height={15}
-                className="object-center"
-                alt="box"
-              />
-            </div>
-            <SplitText className="text-[#D0D0D0] sofia-light text-sm md:text-base">
-              Support a woman&apos;s evolution. Sponsor a story. Start a ripple
-              of generational change.
-            </SplitText>
-            <div className="flex md:flex-row flex-col items-center gap-8">
-              <div className="scale-[0.95]">
-                <FooterCircle />
-              </div>
-              <div className="space-y-5">
-                <div className="flex items-center gap-2">
-                  <Image
-                    src="/icons/uba.png"
-                    width={65}
-                    height={65}
-                    className="object-center"
-                    alt="box"
-                  />
-                  <div className="space-y-0.5 sofia-light">
-                    <h3 className="text-white text-xl">2017354167</h3>
-                    <div className="space-y-0.5 text-[#DBDBDB] text-xs">
-                      <p>United Bank for Africa</p>
-                      <p>Bethel Ehikioya</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="flex items-center gap-4 w-full">
-                  {socials.map((soc) => (
-                    <div
-                      style={{
-                        background:
-                          "linear-gradient(180deg, #161616 0%, #414141 100%)",
-                      }}
-                      key={soc.icon}
-                      className="border aspect-auto relative flex cursor-pointer items-center justify-center w-[50px] h-[45px]  border-[#808080]  rounded-md "
-                    >
-                      <Image
-                        src={soc.icon}
-                        width={20}
-                        height={20}
-                        className="object-center object-contain w-[19px] h-[18px] "
-                        alt="box"
-                      />
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="w-full flex items-center justify-center lg:justify-end">
-          <FooterForm />
-        </div>
+      <div className="flex  pb-6 md:pb-12 lg:pb-16 mt-8 lg:mt-16 items-center justify-center z-20">
+        <FooterForm />
       </div>
 
       <div className="w-full flex justify-center items-center">
         <div className="flex md:flex-row flex-col items-center gap-4 lg:gap-8 justify-between w-[90%]">
           {boxes.map((box) => (
             <div
-               data-aos="zoom-in"
-      data-aos-easing="linear"
-      data-aos-duration="1500"
-      data-aos-anchor-placement="top-bottom"
+              data-aos="zoom-in"
+              data-aos-easing="linear"
+              data-aos-duration="500"
+              data-aos-anchor-placement="top-bottom"
               style={{
                 background: "linear-gradient(180deg, #000000 0%, #3E3E3E 100%)",
               }}
@@ -163,3 +99,5 @@ export default function Footer() {
     </footer>
   );
 }
+
+

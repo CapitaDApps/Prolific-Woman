@@ -7,8 +7,8 @@ export default function HomeEvolute() {
       <h2 className="text-black/20 text-3xl sofia-medium md:text-6xl font-bold ">
         EVOLUTION
       </h2>
-      <SplitText className="text-[#AE7400] text-center text-base px-4 md:text-4xl">
-        Join a Global community where women Evolve, Excel, Empower.
+      <SplitText className="text-purple-700 text-center text-base px-4 md:text-4xl">
+       Empowering Women to Evolve, Thrive and Lead
       </SplitText>
     </div>
   );

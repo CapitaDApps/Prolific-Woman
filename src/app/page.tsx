@@ -2,7 +2,7 @@
 
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect, } from "react";
+import { useEffect } from "react";
 import HomeEvolute from "@/components/HomeEvolute";
 import HomeSwipe from "@/components/HomeSwipe";
 import Ribbon from "@/components/Ribbon";
@@ -13,9 +13,11 @@ import Gallery from "@/components/sections/Gallery";
 import Impact from "@/components/sections/Impact";
 import Journey from "@/components/sections/Journey";
 import React from "react";
+import SponsorShip from "@/components/sections/Sponsorship";
+import Books from "@/components/sections/Books";
+import Founder from "@/components/sections/Founder";
 
 export default function Page() {
-
   useEffect(() => {
     AOS.init({
       duration: 800,
@@ -33,6 +35,9 @@ export default function Page() {
       <Events />
       <Ribbon />
       <Impact />
+      <Founder />
+      <Books />
+      <SponsorShip />
     </div>
   );
 }

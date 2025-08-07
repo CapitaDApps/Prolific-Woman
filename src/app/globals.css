@@ -149,6 +149,13 @@ body {
   background-clip: text; /* for Firefox */
   color: transparent; /* fallback for other browsers */
 }
+.spon {
+  background:  linear-gradient(180deg, #c4c4c4 0%, #ebebeb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* for Firefox */
+  color: transparent; /* fallback for other browsers */
+}
 
 @keyframes rotateText {
   0% {

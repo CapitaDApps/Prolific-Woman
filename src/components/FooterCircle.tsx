@@ -1,6 +1,6 @@
 "use client";
 import { LiaCompressArrowsAltSolid } from "react-icons/lia";
-const FooterCircle = () => {
+const FooterCircle = ({ color }: { color: string }) => {
   return (
     <div
       data-aos="zoom-in"
@@ -15,7 +15,7 @@ const FooterCircle = () => {
           cx="100"
           cy="100"
           r="98"
-          stroke="white"
+          stroke={`${color === "white" ? "white" : "black"}`}
           strokeWidth="1"
           fill="none"
         />
@@ -23,7 +23,7 @@ const FooterCircle = () => {
           cx="100"
           cy="100"
           r="48"
-          stroke="white"
+          stroke={`${color === "white" ? "white" : "black"}`}
           strokeWidth="1"
           fill="none"
         />
@@ -41,7 +41,12 @@ const FooterCircle = () => {
             fill="none"
           />
         </defs>
-        <text fill="white" fontSize="14" fontWeight="500" letterSpacing="1.5">
+        <text
+          fill={`${color === "white" ? "white" : "black"}`}
+          fontSize="14"
+          fontWeight="500"
+          letterSpacing="1.5"
+        >
           <textPath href="#circlePath" startOffset="0%">
             THE PROLIFIC WOMAN TRYBE • THE PROLIFIC WOMAN •
           </textPath>
@@ -49,7 +54,11 @@ const FooterCircle = () => {
       </svg>
 
       {/* Center Dot */}
-      <LiaCompressArrowsAltSolid className="text-white z-10 text-xl" />
+      <LiaCompressArrowsAltSolid
+        className={`${
+          color === "white" ? "text-white" : "text-black"
+        } z-10 text-xl`}
+      />
     </div>
   );
 };
