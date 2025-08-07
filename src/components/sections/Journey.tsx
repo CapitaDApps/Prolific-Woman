@@ -36,7 +36,7 @@ export default function Journey() {
     }, 3000);
   }, []);
   return (
-    <div className="sofia-medium relative px-6 lg:px-12 py-6 lg:py-12">
+    <div className="sofia-medium bg-pink-100 relative px-6 lg:px-12 py-6 lg:py-12">
       <div className="grid lg:grid-cols-4 max-w-[280px] md:max-w-[600px] gap-5 lg:gap-0 md:grid-cols-2 grid-cols-1 lg:max-w-[1300px] w-full mx-auto">
         {jour.map((jou) => (
           <div
@@ -89,8 +89,8 @@ export default function Journey() {
             >
               {jou.text}
             </h4>
-            <div className="relative w-[95%] h-[200px]">
-              <Image src={jou.image} className="object-center object-cover" fill alt="img" />
+            <div className="relative w-[100%] h-[200px]">
+              <Image src={jou.image} className="object-center object-contain" fill alt="img" />
             </div>
           </div>
         ))}

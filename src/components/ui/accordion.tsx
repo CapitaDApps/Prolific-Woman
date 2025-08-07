@@ -41,7 +41,7 @@ function AccordionTrigger({
         {...props}
       >
         {children}
-        <BsArrowDown className="text-white pointer-events-none size-4 shrink-0 translate-y-0.5 transition-transform duration-200" />
+        <BsArrowDown className="text-[#462860] pointer-events-none size-4 shrink-0 translate-y-0.5 transition-transform duration-200" />
       </AccordionPrimitive.Trigger>
     </AccordionPrimitive.Header>
   );

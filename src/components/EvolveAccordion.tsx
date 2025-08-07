@@ -99,7 +99,7 @@ export default function EvolveAccordion() {
                   className=" border-none  text-white"
                   onClick={() => handleChange(index)}
                 >
-                  <AccordionTrigger className="text-sm md:text-base rounded-full bg-[#95846B] cursor-pointer hover:no-underline hover:border-none px-4 py-2.5">
+                  <AccordionTrigger className="text-sm md:text-base rounded-full text-[#462860] bg-white cursor-pointer hover:no-underline hover:border-none px-4 py-2.5">
                     {item.title}
                   </AccordionTrigger>
                   <AccordionContent>
@@ -150,13 +150,13 @@ export default function EvolveAccordion() {
       data-aos-duration="1500"
       data-aos-anchor-placement="top-bottom" className="w-full flex items-center justify-center">
           <div className="bg-white px-6 py-12 rounded-2xl w-full max-w-lg lg:w-[90%] ">
-            <h5 className="text-[#AE7400] text-2xl font-semibold">
+            <h5 className="text-[#462860] text-2xl font-semibold">
               Who It&apos;s For
             </h5>
-            <p className="text-[#534635] text-base pt-2">
+            <p className="text-[#462860] text-base pt-2">
               The Evolve Her journey is created for:
             </p>
-            <div className="space-y-3 text-sm pt-4 text-[#534635]">
+            <div className="space-y-3 text-sm pt-4 text-[#462860]">
               <p className="flex items-center gap-2 sofia-light font-[500]">
                 <span>&#x2022;</span> African women aged 18-55
               </p>
@@ -177,7 +177,7 @@ export default function EvolveAccordion() {
         </div>
       </div>
 
-      <Button className="relative hover:bg-transparent rounded-full overflow-hidden group bg-[#ffffff]   transition-all duration-500 cursor-pointer text-sm  !px-4 lg:px-6 !py-1.5 md:!py-2.5">
+      {/* <Button className="relative hover:bg-transparent rounded-full overflow-hidden group bg-[#ffffff]   transition-all duration-500 cursor-pointer text-sm  !px-4 lg:px-6 !py-1.5 md:!py-2.5">
         <span className="relative z-10 text-xs lg:text-sm text-purple-700 group-hover:text-white transition-colors duration-500">
           Support the Prolific Woman Trybe
         </span>
@@ -186,7 +186,7 @@ export default function EvolveAccordion() {
           className="absolute inset-0 bg-purple-700 rounded-full m-0.5 z-0 scale-x-0 origin-left transition-transform duration-500 group-hover:scale-x-100"
           aria-hidden="true"
         ></span>
-      </Button>
+      </Button> */}
     </section>
   );
 }

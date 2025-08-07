@@ -33,8 +33,8 @@ export default function About() {
 
       <div className="space-y-6">
         <div className="flex  flex-col md:flex-row items-start w-full justify-between gap-5">
-          <div className="w-full flex items-center  justify-center h-[350px] md:h-[450px] lg:h-[600px] ">
-            <div className="relative aspect-auto w-[90%] max-w-sm lg:max-w-lg h-full">
+          <div className="w-full flex items-center  justify-center h-[350px] md:h-[450px] lg:h-[500px] ">
+            <div className="relative aspect-auto w-[100%] md:w-[90%] max-w-sm lg:max-w-lg h-full">
               <Image
                 alt="img"
                   data-aos="fade-up"
@@ -42,7 +42,7 @@ export default function About() {
                   data-aos-duration="1500"
                   data-aos-anchor-placement="top-bottom"
                 fill
-                src={"/images/court_2.png"}
+                src={"/images/court_3.png"}
                 className="object-top object-contain "
               />
             </div>

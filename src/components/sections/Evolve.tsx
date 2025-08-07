@@ -7,11 +7,12 @@ export default function Evolve() {
     <section
       id="evolve"
       style={{
-        background: "url(/images/evolve.png)",
+        background:
+          "linear-gradient(180deg,rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(/images/evolve.png)",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
         backgroundSize: "cover",
-        backgroundAttachment: "fixed",
+        // backgroundAttachment: "fixed",
       }}
       className="h-full  lg:px-12 lg:pb-12  pt-20 py-6 px-4"
     >
@@ -20,12 +21,9 @@ export default function Evolve() {
       </SplitText>
 
       <SplitText className="sofia-light text-xs md:text-base text-white py-3 lg:py-6 max-w-full lg:max-w-[55%]">
-        The Prolific Woman Trybe (TPWT) is a global community of high-achieving
-        women committed to personal evolution, professional excellence, and
-        collective empowerment. Founded by Bethel Ehikioya, a Nigerian speaker,
-        author, and entrepreneur, TPWT was born from a vision to help women
-        unlock their full potential—beyond societal roles, limitations, or
-        expectations.
+        TPWT is a global community of high-achieving women committed to growth,
+        excellence, and empowerment. Founded by Bethel Ehiakoya, it helps women
+        unlock their full potential beyond societal roles and expectations.
       </SplitText>
       <EvolveAccordion />
     </section>

@@ -11,6 +11,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaBars } from "react-icons/fa";
 import { useNav } from "@/lib/useNav";
+import { Button } from "../ui/button";
 export default function MobileHeader() {
   const nav = [
     {
@@ -51,9 +52,9 @@ export default function MobileHeader() {
             <FaBars />
           </div>
         </SheetTrigger>
-        <SheetContent className="flex  justify-center md:max-w-[250px] max-w-[150px]">
+        <SheetContent className="flex  md:max-w-[250px] max-w-[150px]">
           <SheetHeader>
-            <div className="flex flex-col gap-6">
+            <div className="flex flex-col mt-20  gap-6">
               {nav.map((link) => (
                 <SheetClose key={link.content} asChild>
                   <Link
@@ -70,6 +71,9 @@ export default function MobileHeader() {
                 </SheetClose>
               ))}
             </div>
+            <button className=" text-[11px] rounded-lg mt-2 bg-purple-700 hover:bg-purple-800  transition-all duration-500 cursor-pointer text-white  p-2 !py-1.5">
+              Join the Trybe
+            </button>
           </SheetHeader>
         </SheetContent>
       </Sheet>
