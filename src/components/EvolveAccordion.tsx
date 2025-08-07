@@ -49,15 +49,15 @@ export default function EvolveAccordion() {
 
   return (
     <section id='evolve' className="flex items-center justify-center flex-col gap-4">
-      <div className="flex flex-col md:flex-row sofia-medium items-center gap-8 justify-between w-full md:px-4 xl:px-12 py-10 ">
+      <div className="flex flex-col md:flex-row sofia-medium items-start gap-8 justify-between w-full md:px-4 lg:px-0 py-10 ">
         {/* Left: Image with animation */}
-        <div className="w-full lg:flex hidden  items-center relative  h-full justify-center">
+        <div className="w-full lg:flex hidden  items-start  relative  h-full justify-start">
           <div className="w-full lg:w-[90%]  relative  max-w-sm  h-[300px] ">
             <AnimatePresence mode="wait">
               <motion.div
                 data-aos="zoom-in"
                 data-aos-easing="linear"
-                data-aos-duration="1500"
+                data-aos-duration="700"
                 data-aos-anchor-placement="top-bottom"
                 key={items[activeIndex].image}
                 initial={{ opacity: 0 }}
@@ -66,7 +66,7 @@ export default function EvolveAccordion() {
                 transition={{ duration: 0.5 }}
                 className="absolute inset-0 flex items-center justify-center"
               >
-                <div className="bg-white p-3 w-[90%] h-[90%] rounded-3xl">
+                <div className="bg-white p-3 w-[90%] h-[100%] rounded-3xl">
                   <div className="bg-[#E7E7D7] w-full h-full p-2 rounded-3xl">
                     <Image
                       src={items[activeIndex].image}
@@ -114,7 +114,7 @@ export default function EvolveAccordion() {
                         <motion.div
                           data-aos="zoom-in"
                           data-aos-easing="linear"
-                          data-aos-duration="1500"
+                         data-aos-duration="700"
                           data-aos-anchor-placement="top-bottom"
                           key={items[activeIndex].image}
                           initial={{ opacity: 0 }}
@@ -147,8 +147,8 @@ export default function EvolveAccordion() {
 
         <div          data-aos="zoom-in"
       data-aos-easing="linear"
-      data-aos-duration="1500"
-      data-aos-anchor-placement="top-bottom" className="w-full flex items-center justify-center">
+      data-aos-duration="1000"
+      data-aos-anchor-placement="top-bottom" className="w-full flex items-center justify-center lg:justify-end">
           <div className="bg-white px-6 py-12 rounded-2xl w-full max-w-lg lg:w-[90%] ">
             <h5 className="text-[#462860] text-2xl font-semibold">
               Who It&apos;s For

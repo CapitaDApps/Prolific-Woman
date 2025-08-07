@@ -89,7 +89,7 @@ export default function Impact() {
               alt="img"
                        data-aos="zoom-in"
       data-aos-easing="linear"
-      data-aos-duration="1500"
+      data-aos-duration="700"
       data-aos-anchor-placement="top-bottom"
               fill
               src={"/images/impact.png"}

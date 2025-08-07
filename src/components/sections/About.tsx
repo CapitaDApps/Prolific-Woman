@@ -39,7 +39,7 @@ export default function About() {
                 alt="img"
                   data-aos="fade-up"
                   data-aos-easing="linear"
-                  data-aos-duration="1500"
+                  data-aos-duration="700"
                   data-aos-anchor-placement="top-bottom"
                 fill
                 src={"/images/court_3.PNG"}
@@ -58,7 +58,7 @@ export default function About() {
                   alt="img"
                   data-aos="fade-up"
                   data-aos-easing="linear"
-                  data-aos-duration="1500"
+                  data-aos-duration="700"
                   data-aos-anchor-placement="top-bottom"
                   fill
                   src={"/images/about_img.png"}
@@ -76,7 +76,7 @@ export default function About() {
                 alt="img"
                   data-aos="fade-up"
                   data-aos-easing="linear"
-                  data-aos-duration="1500"
+                        data-aos-duration="700"
                   data-aos-anchor-placement="top-bottom"
                 fill
                 src={"/images/about_img2.png"}

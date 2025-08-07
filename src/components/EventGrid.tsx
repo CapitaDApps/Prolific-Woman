@@ -44,9 +44,9 @@ export default function EventGrid() {
       <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-[90%] mx-auto">
         {cards.map((card, i) => (
           <div
-                   data-aos="zoom-in"
+                   data-aos="fade-up"
       data-aos-easing="linear"
-      data-aos-duration="1500"
+       data-aos-duration="700"
       data-aos-anchor-placement="top-bottom"
             key={i}
             className={`relative ${

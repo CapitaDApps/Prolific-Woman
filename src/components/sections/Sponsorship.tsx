@@ -21,7 +21,7 @@ export default function SponsorShip() {
       <div className="flex gap-5 flex-col md:flex-row pb-6 md:pb-12 lg:pb-16 mt-8 lg:mt-16 items-center z-20">
         <div className="w-full">
           <div className="space-y-5  md:max-w-sm">
-            <div className="flex items-center gap-2 md:gap-3">
+            <div className="flex items-center gap-2 z-20 md:gap-3">
               <h3 className="text-black font-bold text-xl md:text-2xl">
                 Sponsor the Vision
               </h3>
@@ -29,7 +29,7 @@ export default function SponsorShip() {
                 src="/images/spon.png"
                 width={15}
                 height={15}
-                className="object-center"
+                className="object-center z-20"
                 alt="box"
               />
             </div>
@@ -41,7 +41,7 @@ export default function SponsorShip() {
             <div className="flex md:flex-row flex-col items-center gap-4">
               <FooterCircle color="black" />
 
-              <div className="flex flex-col md:flex-row  lg:flex-col items-center lg:items-start gap-8">
+              <div className="flex flex-col lg:flex-col items-center lg:items-start gap-8">
                 <div className="space-y-5">
                   <div className="flex items-center gap-2">
                     <Image

@@ -88,7 +88,7 @@ export default function HomeSwipe() {
 
             <div   data-aos="fade-up"
                   data-aos-easing="linear"
-                  data-aos-duration="1000" className="px-4 max-w-lg lg:max-w-full lg:px-12 absolute inset-0 z-20 flex flex-col justify-center   text-white">
+                  data-aos-duration="700" className="px-4 max-w-lg lg:max-w-full lg:px-12 absolute inset-0 z-20 flex flex-col justify-center   text-white">
               <h2 className="text-2xl md:text-5xl lg:text-[50px] font-bold sofia-medium  lg:leading-[70px] max-w-[48rem]">
                 {slides[index].heading}
               </h2>
@@ -117,7 +117,7 @@ export default function HomeSwipe() {
                 <div
                   data-aos="zoom-in"
                   data-aos-easing="linear"
-                  data-aos-duration="1500"
+                  data-aos-duration="700"
                   className="border-2 border-white p-0.5"
                 >
                   <button className="relative overflow-hidden  group bg-transparent hover:bg-transparent   hover:scale-[1.05] transition-all duration-500 cursor-pointer text-sm rounded-none !px-2 lg:px-6 !py-1.5 md:!py-2.5">

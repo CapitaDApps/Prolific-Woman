@@ -20,7 +20,7 @@ export default function Founder() {
               MEET THE FOUNDER
             </h2>
 
-            <div className="md:text-sm text-xs  sofia-light  lg:max-w-[85%] text-[#282828] space-y-4 lg:space-y-6">
+            <div className="md:text-sm text-xs  sofia-light  text-[#282828] space-y-4 lg:space-y-6">
               <p>
                 <span className="font-bold">Bethel Ehikioya</span> is a
                 visionary entrepreneur, real estate expert, and women&apos;s
