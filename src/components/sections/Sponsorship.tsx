@@ -12,7 +12,7 @@ export default function SponsorShip() {
       style={{
         backgroundAttachment: "fixed",
       }}
-      className=" bg-[#EBE7E4]/60 sofia-medium px-6 lg:px-12 pb-12   pt-20 relative"
+      className=" bg-[#ebebeb]/20 sofia-medium px-6 lg:px-12 pb-12   pt-20 relative"
     >
       <h1 className="lg:absolute tracking-[5px] left-0 top-[5px] lg:top-[45px]  z-[1] right-0 spon text-4xl md:text-7xl lg:text-[120px] xl:text-[140px] font-bold text-center">
         Sponsorship
