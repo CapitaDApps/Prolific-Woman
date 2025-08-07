@@ -70,7 +70,7 @@ export default function Journey() {
             ) : (
               <div className="w-full flex items-end justify-end pb-4 lg:pb-16">
                 <div className="relative size-[80px] lg:size-[150px] ">
-                  <Image src={"/images/bird.png"} fill alt="img" />
+                  <Image src={"/images/bird.png"} className="object-center" fill alt="img" />
                 </div>
               </div>
             )}
@@ -90,7 +90,7 @@ export default function Journey() {
               {jou.text}
             </h4>
             <div className="relative w-[95%] h-[200px]">
-              <Image src={jou.image} fill alt="img" />
+              <Image src={jou.image} className="object-center object-cover" fill alt="img" />
             </div>
           </div>
         ))}
