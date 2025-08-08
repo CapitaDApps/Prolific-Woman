@@ -131,7 +131,7 @@ export default function HomeSwipe() {
                   className="border-2 border-white p-0.5"
                 >
                   <button className="relative overflow-hidden  group bg-transparent hover:bg-transparent   hover:scale-[1.05] transition-all duration-500 cursor-pointer text-sm rounded-none !px-2 lg:px-6 !py-1.5 md:!py-2.5">
-                    <Link href='https://web.facebook.com/profile.php?id=61556725214046' className="relative text-xs lg:text-sm z-10 text-white group-hover:text-purple-700 transition-colors duration-500">
+                    <Link target="_blank" href='https://web.facebook.com/profile.php?id=61556725214046' className="relative text-xs lg:text-sm z-10 text-white group-hover:text-purple-700 transition-colors duration-500">
                       {slides[index].secondButton}
                     </Link>
 

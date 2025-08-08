@@ -30,7 +30,7 @@ export default function Founder() {
               </p>
               Bethel empowers individuals to build wealth, achieve
               purpose-driven success, and unlock their full potential through
-              real estate and personal development
+              real estate and personal development.
               <p></p>
             </div>
           </div>

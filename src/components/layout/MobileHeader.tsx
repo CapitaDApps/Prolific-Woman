@@ -72,6 +72,7 @@ export default function MobileHeader() {
               ))}
             </div>
             <Link
+            target="_blank"
               href="https://web.facebook.com/profile.php?id=61556725214046"
               className=" w-fit px-3.5 text-[11px] rounded-lg mt-2 bg-purple-700 hover:bg-purple-800  transition-all duration-500 cursor-pointer text-white  p-2 py-2"
             >

@@ -75,6 +75,7 @@ export default function EventGrid() {
             <div className="relative z-10 text-white">
               <h3 className="text-white text-base">{card.title}</h3>
               <Link
+                target={`${card.link.startsWith('#')? '':"_blank"}`}
                 href={card.link}
                 className={`mt-2 inline-block cursor-pointer text-sm font-medium transition ${
                   card.buttonType === "primary"

@@ -59,6 +59,7 @@ export default function Books() {
                 className="flex items-center justify-center"
               >
                 <Link
+                target="_blank"
                   className="w-fit rounded-md bg-[#480F80] text-xs mt-3 text-center text-white py-1.5 px-4 cursor-pointer"
                   href={book.link}
                 >

@@ -46,9 +46,10 @@ export default function Footer() {
       </div>
 
       <div className="w-full flex justify-center items-center">
-        <div className="flex md:flex-row flex-col items-center gap-4 lg:gap-8 justify-between w-[90%]">
+        <div className="flex md:flex-row flex-col items-center gap-4 lg:gap-8 justify-between w-[90%] md:w-[95%] lg:w-[90%]">
           {boxes.map((box) => (
             <Link
+            target="_blank"
               href={box.link}
               data-aos="zoom-in"
               data-aos-easing="linear"
