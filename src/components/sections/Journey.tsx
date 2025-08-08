@@ -7,7 +7,7 @@ export default function Journey() {
     {
       image: "/images/journey_1.png",
       year: 2023,
-      text: "Women Evolve Conference",
+      text: "Breaking Barrier Conference",
       id:1,
     },
     {
@@ -23,7 +23,7 @@ export default function Journey() {
       id:3,
     },
     {
-      image: "/images/journey_4.png",
+      image: "/images/evolve_6.jpg",
       year: 2025,
       text: "Evolve Her Conference",
       id:4,

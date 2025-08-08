@@ -11,9 +11,9 @@ export default function SponsorBox() {
         "Keynote speaker at Evolve Her Conference",
         "Legacy Sponsor of Book Club/Mentorship",
       ],
-      colorHead: "#00264E",
-      colorSmall: "#1C3788",
-      colorBg: "#EDF6FF",
+      colorHead: "#2E005F", // deep royal purple
+      colorSmall: "#4B0D8F", // medium vivid purple
+      colorBg: "#F5E9FF",
       id: 1,
     },
     {
@@ -25,9 +25,9 @@ export default function SponsorBox() {
         "Keynote speaker at Evolve Her Conference",
         "Supports school and prison reading events",
       ],
-      colorHead: "#144C00",
-      colorSmall: "#1C6800",
-      colorBg: "#EEFFE8",
+      colorHead: "#800033", // deep dark pink / burgundy
+      colorSmall: "#B3004D", // medium vivid pink
+      colorBg: "#FFE6F0",
       id: 2,
     },
     {
@@ -39,9 +39,10 @@ export default function SponsorBox() {
         "Brand featured in all program-related promotions",
         "Receive visibility across themed sessions and content",
       ],
-      colorHead: "#725700",
-      colorSmall: "#B48900",
-      colorBg: "#FFF6D9",
+      colorHead: "#000000", // dark gray for strong contrast
+      colorSmall: "#000000", // medium gray for softer text
+      colorBg: "#FFFFFF", // pure white background
+
       id: 3,
     },
     {
@@ -53,9 +54,9 @@ export default function SponsorBox() {
         "Contribute venues, equipment, books, or support services",
         "Get Listed as sponsors at all relevant events and platforms",
       ],
-      colorHead: "#725700",
-      colorSmall: "#B48900",
-      colorBg: "#FFF6D9",
+      colorHead: "#000000", // dark gray for strong contrast
+      colorSmall: "#000000", // medium gray for softer text
+      colorBg: "#FFFFFF", // pure white background
       id: 4,
     },
   ];
@@ -63,10 +64,10 @@ export default function SponsorBox() {
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 sofia-medium gap-4 ">
       {boxes.map((box) => (
         <div
-                   data-aos="fade-up"
-                  data-aos-easing="linear"
-                  data-aos-duration="500"
-                  data-aos-anchor-placement="top-bottom"
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-duration="500"
+          data-aos-anchor-placement="top-bottom"
           style={{
             background: box.colorBg,
             borderRadius: "10px",
@@ -96,7 +97,7 @@ export default function SponsorBox() {
             </div>
           </div>
 
-          <div className="flex sofia-light pt-2 flex-col gap-1.5 items-center justify-center text-xs text-black">
+          <div className={`flex sofia-light pt-2 flex-col gap-1.5 items-center justify-center text-xs text-black`}>
             {box.content.map((p) => (
               <p className="text-center" key={p}>
                 {p}
