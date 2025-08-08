@@ -55,7 +55,7 @@ const Gallery = () => {
 
   return (
     <div className="sofia-medium py-12  text-center">
-      <h2 className="text-black/10 text-2xl md:text-3xl lg:text-5xl font-bold ">
+      <h2 className="text text-2xl md:text-3xl lg:text-5xl font-bold ">
         PHOTO GALLERY
       </h2>
       <div className="overflow-hidden w-full max-w-[1640px] mx-auto relative py-8">

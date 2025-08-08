@@ -71,9 +71,12 @@ export default function MobileHeader() {
                 </SheetClose>
               ))}
             </div>
-            <button className=" text-[11px] rounded-lg mt-2 bg-purple-700 hover:bg-purple-800  transition-all duration-500 cursor-pointer text-white  p-2 !py-1.5">
+            <Link
+              href="https://web.facebook.com/profile.php?id=61556725214046"
+              className=" w-fit px-3.5 text-[11px] rounded-lg mt-2 bg-purple-700 hover:bg-purple-800  transition-all duration-500 cursor-pointer text-white  p-2 py-2"
+            >
               Join the Trybe
-            </button>
+            </Link>
           </SheetHeader>
         </SheetContent>
       </Sheet>

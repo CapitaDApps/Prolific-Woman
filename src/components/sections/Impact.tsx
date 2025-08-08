@@ -3,8 +3,9 @@ import Image from "next/image";
 import React from "react";
 import CountUp from "react-countup";
 import { Button } from "../ui/button";
-import { useInView } from 'react-intersection-observer';
+import { useInView } from "react-intersection-observer";
 import SplitText from "../SplitText";
+import Link from "next/link";
 export default function Impact() {
   const nums = [
     {
@@ -28,9 +29,8 @@ export default function Impact() {
       content: "Passionate leaders joined to guide and empower others.",
     },
   ];
-   const { ref, inView } = useInView({ triggerOnce: true });
+  const { ref, inView } = useInView({ triggerOnce: true });
   return (
-    
     <div className="w-full bg-[#EBE7E4] flex  items-center py-12 justify-center">
       <div
         style={{
@@ -41,9 +41,7 @@ export default function Impact() {
       >
         <div className="space-y-3 md:space-y-4 w-full">
           <div className="space-y-3">
-            <h2 className="text-black/10 text-2xl md:text-5xl font-bold ">
-              IMPACT
-            </h2>
+            <h2 className="text text-2xl md:text-5xl font-bold ">IMPACT</h2>
             <SplitText className="text-[#575757] font-bold sofia-light text-xs md:text-sm">
               Our Vision to equip women globally with the tools, mindset, and
               community they need to evolve into their fullest potential—in
@@ -59,13 +57,18 @@ export default function Impact() {
                   i > 1 && "border-t border-[#DDDDDD] pt-4"
                 }`}
               >
-                <h3 ref={ref} className="text-[#480F80] text-xl md:text-3xl sofia-medium font-semibold">
-                  {inView && <CountUp
-                    end={num.count}
-                    start={0}
-                    duration={2}
-                    separator=","
-                  />}
+                <h3
+                  ref={ref}
+                  className="text-[#480F80] text-xl md:text-3xl sofia-medium font-semibold"
+                >
+                  {inView && (
+                    <CountUp
+                      end={num.count}
+                      start={0}
+                      duration={2}
+                      separator=","
+                    />
+                  )}
                   +
                 </h3>
                 <SplitText className="text-[#2F2F2F] text-xs md:text-sm font-bold">
@@ -79,7 +82,7 @@ export default function Impact() {
           </div>
           <div className="border-2 mt-2  border-[#480F80] w-max transition-all duration-500 p-0.5 pb-[2.2px] hover:scale-[1.05]">
             <Button className="relative overflow-hidden group bg-[#480F80] hover:bg-bg-[#480F80 text-xs transition-all duration-500 cursor-pointer md:text-sm rounded-none px-6 !py-2.5">
-              Support the Movement
+              <Link href="#sponsorship">Support the Movement</Link>
             </Button>
           </div>
         </div>
@@ -87,10 +90,10 @@ export default function Impact() {
           <div className="hidden lg:block relative aspect-auto max-w-md lg:max-w-lg w-[80%] h-[400px] lg:h-[450px]">
             <Image
               alt="img"
-                       data-aos="zoom-in"
-      data-aos-easing="linear"
-      data-aos-duration="700"
-      data-aos-anchor-placement="top-bottom"
+              data-aos="zoom-in"
+              data-aos-easing="linear"
+              data-aos-duration="700"
+              data-aos-anchor-placement="top-bottom"
               fill
               src={"/images/impact.png"}
               className="object-center object-contain"

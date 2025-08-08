@@ -16,7 +16,7 @@ export default function Founder() {
           className="flex md:flex-row flex-col-reverse h-[500px] lg:h-[400px] rounded-3xl max-w-[95%] lg:max-w-[80%]  w-full"
         >
           <div className="flex flex-col h-[90%] pb-6 md:h-full px-3 py-4 md:px-6 md:py-8 gap-4 lg:gap-8 w-full *:">
-            <h2 className="text-black/10 text-2xl md:text-5xl font-bold ">
+            <h2 className="text text-2xl md:text-5xl font-bold ">
               MEET THE FOUNDER
             </h2>
 

@@ -51,11 +51,11 @@ export default function Header() {
           </Link>
         ))}
       </div>
-      <div className="border-2 border-[#480F80] transition-all duration-500 p-0.5 pb-[2.2px] hover:scale-[1.05]">
+      <Link href={'#sponsorship'} className="border-2 border-[#480F80] transition-all duration-500 p-0.5 pb-[2.2px] hover:scale-[1.05]">
         <Button className="relative overflow-hidden group bg-[#480F80] hover:bg-bg-[#480F80  transition-all duration-500 cursor-pointer text-sm rounded-none px-6 !py-2.5">
           Become a Sponsor
         </Button>
-      </div>
+      </Link>
     </div>
   );
 }

@@ -57,9 +57,9 @@ export function SponshipForm() {
         data-aos-easing="linear"
         data-aos-duration="500"
         data-aos-anchor-placement="top-bottom"
-        style={{
+         style={{
           background:
-            " linear-gradient(180deg, #c4c4c4 0%, #ebebeb 100%)",
+            "rgba(224, 224, 224, 0.7)",
         }}
         onSubmit={form.handleSubmit(onSubmit)}
         className="space-y-3 border border-[#CCCCCC] rounded-3xl p-2 max-w-md w-full md:w-[65%] z-30"
@@ -144,7 +144,7 @@ export function SponshipForm() {
           )}
         />
         <Button
-          className="w-full hover:bg-[#404040]/80 cursor-pointer rounded-full bg-[#404040] text-white text-xs "
+          className="w-full  cursor-pointer rounded-full hover:bg-[##480F80]/85 bg-[#480F80] text-white text-xs "
           type="submit"
         >
           Submit

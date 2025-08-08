@@ -6,13 +6,13 @@ export default function Books() {
   const books = [
     {
       img: "/images/book_1.png",
-      link: "#",
+      link: "https://selar.co/8mn027",
       content:
         "The Millionaire Realtor is a practical guide that shares expert insights and proven strategies for succeeding in the real estate industry. Whether you're just starting out or looking to hit your next big milestone, this guide will help you unlock the mindset and mastery required to become a millionaire in real estate",
     },
     {
       img: "/images/book_2.png",
-      link: "#",
+      link: "https://selar.co/6w6a60",
       content:
         "“While in the Waiting Room is a memoir that details my journey and personal experience transitioning from a homemaker into a full-fledged business woman. It captures my experience of self-discovery, growth and resilience that has brought me to where I am today”",
     },
@@ -22,7 +22,7 @@ export default function Books() {
       id="book"
       className="sofia-medium relative px-4 lg:px-12 bg-[#F8F3FF] py-12 lg:pb-12 pt-20 h-full"
     >
-      <h2 className="text-black/10 text-2xl md:text-5xl text-center font-bold ">
+      <h2 className="text text-2xl md:text-5xl text-center font-bold ">
         BOOKS BY THE FOUNDER
       </h2>
 

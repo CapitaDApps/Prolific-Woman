@@ -49,7 +49,7 @@ export function FooterForm() {
         data-aos-anchor-placement="top-bottom"
         style={{
           background:
-            "linear-gradient(180deg, rgba(71, 71, 71, 0.5) 0%, rgba(153, 153, 153, 0.5) 100% )",
+            "rgba(224, 224, 224, 0.5)",
         }}
         onSubmit={form.handleSubmit(onSubmit)}
         className="space-y-3 border border-[#7A7A7A] rounded-3xl p-2 max-w-md z-30"
@@ -62,7 +62,7 @@ export function FooterForm() {
               <FormItem className="w-full">
                 <FormControl>
                   <Input
-                    className="bg-[#434343] w-full sofia-light py-2 text-[#CCCCCC] text-xs rounded-xl border border-[#7A7A7A]"
+                    className="bg-white w-full sofia-light py-2 text-[#5A5A5A] text-xs rounded-xl border border-[#7A7A7A]"
                     placeholder="Name"
                     {...field}
                   />
@@ -80,7 +80,7 @@ export function FooterForm() {
                 <FormControl>
                   <Input
                   type="email"
-                    className="bg-[#434343] sofia-light w-full py-2 text-[#CCCCCC] text-xs rounded-xl border border-[#7A7A7A]"
+                    className="bg-white sofia-light w-full py-2 text-[#5A5A5A] text-xs rounded-xl border border-[#7A7A7A]"
                     placeholder="Email"
                     {...field}
                   />
@@ -99,7 +99,7 @@ export function FooterForm() {
               <FormControl>
                 <Textarea
                   placeholder="Tell us a little bit about yourself"
-                  className="resize-none h-[100px] bg-[#434343] sofia-light py-2 text-[#CCCCCC] text-xs rounded-xl border border-[#7A7A7A]"
+                  className="resize-none h-[100px] bg-white sofia-light py-2 text-[#5A5A5A] text-xs rounded-xl border border-[#7A7A7A]"
                   {...field}
                 />
               </FormControl>
@@ -109,7 +109,7 @@ export function FooterForm() {
           )}
         />
         <Button
-          className="w-full hover:bg-white/85 cursor-pointer rounded-full bg-white text-[#212121] text-xs "
+          className="w-full hover:bg-[##480F80]/85 cursor-pointer rounded-full bg-[#480F80] text-white text-xs "
           type="submit"
         >
           Submit
@@ -118,3 +118,4 @@ export function FooterForm() {
     </Form>
   );
 }
+

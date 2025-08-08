@@ -3,38 +3,40 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-
-const slides = [
-  {
-    heading: "Empowering Women to Evolve, Thrive and Lead",
-    subtext: "Unlocking Potential, Unleashing Greatness",
-    imageUrl: "/images/img_1.png",
-    firstButton: "Support the Movement",
-    secondButton: "Join the Trybe",
-    arrow: "/images/arrow_3.png",
-  },
-  {
-    heading: "Empowering every woman to lead with purpose",
-    subtext: "A nurturing space to live, lead, and grow in purpose",
-    imageUrl: "/images/img_2.png",
-    firstButton: "Become a Sponsor",
-    secondButton: "Join the Trybe",
-    arrow: "/images/arrow_1.png",
-  },
-  {
-    heading: "A Global community where women evolve, excel, empower",
-    subtext:
-      "Join a sisterhood of women committed to growth, greatness, and generational impact",
-    imageUrl: "/images/img_3.png",
-    firstButton: "Become a Sponsor",
-    secondButton: "Join the Trybe",
-    arrow: "/images/arrow_1.png",
-  },
-];
+import { useNav } from "@/lib/useNav";
+import Link from "next/link";
 
 export default function HomeSwipe() {
+  const { width } = useNav();
+  const slides = [
+    {
+      heading: "Empowering Women to Evolve, Thrive and Lead",
+      subtext: "Unlocking Potential, Unleashing Greatness",
+      imageUrl: "/images/img_1.png",
+      firstButton: "Support the Movement",
+      secondButton: "Join the Trybe",
+      arrow: "/images/arrow_3.png",
+    },
+    {
+      heading: "Empowering every woman to lead with purpose",
+      subtext: "A nurturing space to live, lead, and grow in purpose",
+      imageUrl: `/images/${width < 600 ? "about_img" : "img_2"}.png`,
+      // imageUrl: `/images/img_${width < 600 ? "5" : "2"}.png`,
+      firstButton: "Become a Sponsor",
+      secondButton: "Join the Trybe",
+      arrow: "/images/arrow_1.png",
+    },
+    {
+      heading: "A Global community where women evolve, excel, empower",
+      subtext:
+        "Join a sisterhood of women committed to growth, greatness, and generational impact",
+      imageUrl: "/images/img_3.png",
+      firstButton: "Become a Sponsor",
+      secondButton: "Join the Trybe",
+      arrow: "/images/arrow_1.png",
+    },
+  ];
   const [[index, direction], setIndex] = useState([0, 0]);
-
   const swipeTo = (dir: number) => {
     setIndex(([prev]) => [(prev + dir + slides.length) % slides.length, dir]);
   };
@@ -58,9 +60,11 @@ export default function HomeSwipe() {
       opacity: 0,
     }),
   };
-
   return (
-    <section id="home" className="relative w-full h-[400px] md:h-[500px]  lg:h-[85vh] overflow-hidden bg-back/30">
+    <section
+      id="home"
+      className="relative w-full h-[400px] md:h-[500px]  lg:h-[85vh] overflow-hidden bg-back/30"
+    >
       <AnimatePresence custom={direction} mode="wait">
         <motion.div
           key={index}
@@ -83,12 +87,15 @@ export default function HomeSwipe() {
               alt={`Slide ${index}`}
               fill
               priority
-              className="object-cover brightness-50 transition duration-500 ease-in-out"
+              className="object-cover object-center brightness-50 transition duration-500 ease-in-out"
             />
 
-            <div   data-aos="fade-up"
-                  data-aos-easing="linear"
-                  data-aos-duration="700" className="px-4 max-w-lg lg:max-w-full lg:px-12 absolute inset-0 z-20 flex flex-col justify-center   text-white">
+            <div
+              data-aos="fade-up"
+              data-aos-easing="linear"
+              data-aos-duration="700"
+              className="px-4 max-w-lg lg:max-w-full lg:px-12 absolute inset-0 z-20 flex flex-col justify-center   text-white"
+            >
               <h2 className="text-2xl md:text-5xl lg:text-[50px] font-bold sofia-medium  lg:leading-[70px] max-w-[48rem]">
                 {slides[index].heading}
               </h2>
@@ -100,13 +107,16 @@ export default function HomeSwipe() {
                 <div
                   data-aos="zoom-in"
                   data-aos-easing="linear"
-                  data-aos-duration="1500"
+                  data-aos-duration="700"
                   className="border-2 border-[#480F80] p-0.5 hover:scale-[1.05]"
                 >
                   <button className="relative hover:bg-transparent overflow-hidden group bg-[#480F80]   transition-all duration-500 cursor-pointer text-sm rounded-none !px-2 lg:px-6 !py-1.5 md:!py-2.5">
-                    <span className="relative z-10 text-xs lg:text-sm text-white group-hover:text-purple-700 transition-colors duration-500">
+                    <Link
+                      href="#sponsorship"
+                      className="relative z-10 text-xs lg:text-sm text-white group-hover:text-purple-700 transition-colors duration-500"
+                    >
                       {slides[index].firstButton}
-                    </span>
+                    </Link>
 
                     <span
                       className="absolute inset-0 bg-white m-0.5 z-0 scale-x-0 origin-left transition-transform duration-500 group-hover:scale-x-100"
@@ -121,9 +131,9 @@ export default function HomeSwipe() {
                   className="border-2 border-white p-0.5"
                 >
                   <button className="relative overflow-hidden  group bg-transparent hover:bg-transparent   hover:scale-[1.05] transition-all duration-500 cursor-pointer text-sm rounded-none !px-2 lg:px-6 !py-1.5 md:!py-2.5">
-                    <span className="relative text-xs lg:text-sm z-10 text-white group-hover:text-purple-700 transition-colors duration-500">
+                    <Link href='https://web.facebook.com/profile.php?id=61556725214046' className="relative text-xs lg:text-sm z-10 text-white group-hover:text-purple-700 transition-colors duration-500">
                       {slides[index].secondButton}
-                    </span>
+                    </Link>
 
                     <span
                       className="absolute inset-0 bg-white z-0 scale-x-0 origin-left transition-transform duration-500 group-hover:scale-x-100"

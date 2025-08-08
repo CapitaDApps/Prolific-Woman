@@ -10,11 +10,11 @@ export default function SponsorShip() {
     <section
       id="sponsorship"
       style={{
-        backgroundAttachment: "fixed",
+        background: "linear-gradient(to bottom, #f3e8ff, #e9d5ff, #d8b4fe)",
       }}
-      className=" bg-[#ebebeb]/20 sofia-medium px-6 lg:px-12 pb-12   pt-20 relative"
+      className="  sofia-medium px-6 lg:px-12 pb-12   pt-20 relative"
     >
-      <h1 className="lg:absolute tracking-[5px] left-0 top-[5px] lg:top-[45px]  z-[1] right-0 spon text-4xl md:text-7xl lg:text-[120px] xl:text-[140px] font-bold text-center">
+      <h1 className="lg:absolute spon tracking-[5px] left-0 top-[5px] lg:top-[45px]  z-[1] right-0  text-4xl md:text-7xl lg:text-[120px] xl:text-[140px] font-bold text-center">
         Sponsorship
       </h1>
 

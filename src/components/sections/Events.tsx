@@ -15,7 +15,7 @@ export default function Events() {
       className=" sofia-medium px-4 py-4 lg:pb-12 pt-20 lg:px-12 "
     >
       <div className="text-center space-y-3">
-        <h2 className="text-black/10 text-2xl md:text-5xl font-bold ">
+        <h2 className="text text-2xl md:text-5xl font-bold ">
           EVENTS & PROGRAMS
         </h2>
         <p className="text-black text-base md:text-2xl font-bold">
